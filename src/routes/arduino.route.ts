@@ -248,6 +248,7 @@ ArduinoRouter.post('/add/data/', async (req, res) => {
                   foundSensor._id,
                   sensorData.data,
                   sensorData.date,
+                  sensorData._id
                 );
               }
             }
