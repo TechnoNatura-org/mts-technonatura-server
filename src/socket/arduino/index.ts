@@ -91,7 +91,7 @@ export default function ArduinoSocket(req: Request, socketGlobal: Socket) {
                   sensorId: sensorId,
                   data: realtimedata.data,
                   dateAdded: realtimedata.date,
-                  id: realtimedata._id
+                  id: realtimedata.id
                 });
             }
           }
