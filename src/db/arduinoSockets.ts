@@ -47,6 +47,7 @@ class arduinoSocketsClass {
     sensorId: string,
     data: string | number,
     dateAdded: number,
+    id: string
   ) {
     this.arduinoSockets.forEach((socket) => {
       if (socket.subscribe.realtimedata.includes(String(sensorId))) {
@@ -58,6 +59,7 @@ class arduinoSocketsClass {
             sensorId: sensorId,
             data: data,
             dateAdded: dateAdded,
+            id: id
           });
       }
     });
